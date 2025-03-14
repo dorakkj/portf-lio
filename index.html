@@ -4,54 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Meu Portfólio</title>
+    <title>Portfólio Escolar</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <h1>Portfólio Escolar</h1>
     </header>
 
-    <section id="sobre">
-        <h1>Olá, sou [Seu Nome]</h1>
-        <p>Desenvolvedor Web com experiência em...</p>
+    <div class="buttons">
+        <button onclick="mostrarMateria('ingles')">Inglês</button>
+        <button onclick="mostrarMateria('portugues')">Português</button>
+        <button onclick="mostrarMateria('matematica')">Matemática</button>
+        <button onclick="mostrarMateria('fisica')">Física</button>
+    </div>
+
+    <section id="ingles" class="materia">
+        <h2>Inglês</h2>
+        <p>Conteúdo de Inglês: resumos, exercícios, etc.</p>
     </section>
 
-    <section id="projetos">
-        <h2>Meus Projetos</h2>
-        <div class="projeto">
-            <h3>Projeto 1</h3>
-            <p>Descrição do projeto 1...</p>
-            <a href="link-do-projeto">Ver projeto</a>
-        </div>
-        <div class="projeto">
-            <h3>Projeto 2</h3>
-            <p>Descrição do projeto 2...</p>
-            <a href="link-do-projeto">Ver projeto</a>
-        </div>
+    <section id="portugues" class="materia">
+        <h2>Português</h2>
+        <p>Conteúdo de Português: resumos, exercícios, etc.</p>
     </section>
 
-    <section id="contato">
-        <h2>Entre em Contato</h2>
-        <form action="mailto:seu-email@example.com" method="post" enctype="text/plain">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+    <section id="matematica" class="materia">
+        <h2>Matemática</h2>
+        <p>Conteúdo de Matemática: resumos, exercícios, etc.</p>
+    </section>
+
+    <section id="fisica" class="materia">
+        <h2>Física</h2>
+        <p>Conteúdo de Física: resumos, exercícios, etc.</p>
     </section>
 
     <footer>
-        <p>© 2025 [Seu Nome] - Todos os direitos reservados.</p>
+        <p>&copy; 2025 Portfólio Escolar - Todos os direitos reservados.</p>
     </footer>
 
     <script src="scripts/script.js"></script>

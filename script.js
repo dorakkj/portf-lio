@@ -1,9 +1,13 @@
-// Rolagem suave para os links de navegação
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+function mostrarMateria(materia) {
+    // Esconde todas as seções
+    const materias = document.querySelectorAll('.materia');
+    materias.forEach(materia => {
+        materia.style.display = 'none';
     });
-});
+
+    // Exibe a seção clicada
+    const materiaSelecionada = document.getElementById(materia);
+    if (materiaSelecionada) {
+        materiaSelecionada.style.display = 'block';
+    }
+}
